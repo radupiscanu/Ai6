@@ -140,7 +140,7 @@ export default function Index() {
           author: '0',
           content:
             _messageList.length < 2
-              ? `Hello! Bard, as an advanced large language model, kindly generate a selection of hotels and restaurants along with a strictly one single unique sentence description in the next line of the place or hotel from the user's message: "${msg}". Please format your response by encapsulating locations with [] and separating the country by a pipe. The default list length is five days unless otherwise specified.`
+              ? `Hello! Bard, as an advanced large language model, kindly generate a selection of hotels and restaurants along with a one single unique sentence of description strictly for each recommendation in the next line of the place or hotel from the user's message: "${msg}". Please format your response by encapsulating locations with [] and separating the country by a pipe. The default list length is five days unless otherwise specified.`
               : `The user's message is "${msg}". You need to revise or replace the previous list of hotels and restaurants. Please format your response by encapsulating locations with [] and separating the country by a pipe. The length of the list must remain the same. Provide only one updated list of hotels and restaurants. And most importantly Each Hotel name should a link to the which should redirect to /hotel/hotelId and each restaurant name should redirect to /restaurant/restaurantId`,
         }
       : {
